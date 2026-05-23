@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carmel Joy | Virtual Assistant & Dispatcher</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800 scroll-smooth">
+
+<style>
+  body {
+    background: #0f172a;
+  }
+
+  .glass {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .gradient-text {
+    background: linear-gradient(to right, #ffffff, #94a3b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .floating {
+    animation: float 4s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+</style>
+
+  <!-- HERO SECTION -->
+  <section class="bg-gradient-to-br from-black via-slate-900 to-gray-900 text-white min-h-screen flex items-center justify-center px-6 relative overflow-hidden">
+
+    <div class="absolute w-96 h-96 bg-blue-500/20 rounded-full blur-3xl top-0 left-0"></div>
+    <div class="absolute w-96 h-96 bg-purple-500/20 rounded-full blur-3xl bottom-0 right-0"></div>
+    <div class="max-w-4xl text-center relative z-10" data-aos="fade-up">
+      <h1 class="text-5xl md:text-7xl font-black mb-6 gradient-text floating">
+        Hi, I'm Carmel ✨
+      </h1>
+
+      <p class="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
+        Virtual Assistant • Dispatcher • Operations Support
+      </p>
+
+      <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-10">
+        I help businesses stay organized, respond faster to customers, manage schedules,
+        handle dispatching, and automate workflows so owners can focus on growth.
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="#services" class="bg-white text-black px-6 py-3 rounded-2xl font-semibold hover:bg-gray-200 transition">
+          My Services
+        </a>
+
+        <a href="#contact" class="border border-white px-6 py-3 rounded-2xl font-semibold hover:bg-white hover:text-black transition">
+          Hire Me
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="py-24 px-6 bg-white" data-aos="fade-up">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop"
+          class="rounded-3xl shadow-2xl"
+          alt="Profile"
+        />
+      </div>
+
+      <div>
+        <h2 class="text-4xl font-bold mb-6">About Me</h2>
+
+        <p class="text-lg text-gray-600 leading-relaxed mb-6">
+          I have experience supporting fast-paced businesses through customer service,
+          dispatch coordination, scheduling, order management, and admin support.
+        </p>
+
+        <p class="text-lg text-gray-600 leading-relaxed mb-6">
+          I specialize in helping companies stay efficient and organized while providing
+          excellent communication with clients.
+        </p>
+
+        <div class="grid grid-cols-2 gap-4 mt-8">
+          <div class="bg-gray-100 p-5 rounded-2xl">
+            <h3 class="font-bold text-xl">3+ Years</h3>
+            <p class="text-gray-600">Customer Support</p>
+          </div>
+
+          <div class="bg-gray-100 p-5 rounded-2xl">
+            <h3 class="font-bold text-xl">Remote</h3>
+            <p class="text-gray-600">Operations Support</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-24 px-6 bg-slate-100" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4">How I Can Help</h2>
+        <p class="text-gray-600 text-lg">
+          Services I can provide for your business
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="glass text-white p-8 rounded-3xl shadow-2xl hover:-translate-y-4 hover:scale-105 duration-300 transition">
+          <h3 class="text-2xl font-bold mb-4">Dispatch Support</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Managing schedules, coordinating drivers, handling incoming requests,
+            and communicating updates efficiently.
+          </p>
+        </div>
+
+        <div class="glass text-white p-8 rounded-3xl shadow-2xl hover:-translate-y-4 hover:scale-105 duration-300 transition">
+          <h3 class="text-2xl font-bold mb-4">Customer Service</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Handling calls, emails, client concerns, quotes, and providing professional
+            customer communication.
+          </p>
+        </div>
+
+        <div class="glass text-white p-8 rounded-3xl shadow-2xl hover:-translate-y-4 hover:scale-105 duration-300 transition">
+          <h3 class="text-2xl font-bold mb-4">Admin Assistance</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Calendar management, spreadsheet organization, workflow automation,
+            and daily business support.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="py-24 px-6 bg-white" data-aos="fade-right">
+    <div class="max-w-5xl mx-auto">
+
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4">Experience</h2>
+        <p class="text-gray-600 text-lg">My professional background</p>
+      </div>
+
+      <div class="space-y-8">
+
+        <div class="border-l-4 border-black pl-6">
+          <h3 class="text-2xl font-bold">Bin Rental Company Operations</h3>
+          <p class="text-gray-500 mb-3">Los Angeles, California</p>
+
+          <p class="text-gray-700 leading-relaxed">
+            Assisted with customer communication, scheduling dumpster deliveries,
+            coordinating operations, quote requests, and dispatch management in a
+            fast-paced environment.
+          </p>
+        </div>
+
+        <div class="border-l-4 border-black pl-6">
+          <h3 class="text-2xl font-bold">Virtual Assistant Support</h3>
+          <p class="text-gray-500 mb-3">Remote</p>
+
+          <p class="text-gray-700 leading-relaxed">
+            Supported businesses through administrative assistance, workflow organization,
+            email management, and customer service.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOLS -->
+  <section class="py-24 px-6 bg-slate-100" data-aos="zoom-in">
+    <div class="max-w-5xl mx-auto text-center">
+
+      <h2 class="text-4xl font-bold mb-12">Tools I Use</h2>
+
+      <div class="flex flex-wrap justify-center gap-4">
+        <span class="bg-white px-6 py-3 rounded-full shadow">Google Workspace</span>
+        <span class="bg-white px-6 py-3 rounded-full shadow">Google Sheets</span>
+        <span class="bg-white px-6 py-3 rounded-full shadow">Google Calendar</span>
+        <span class="bg-white px-6 py-3 rounded-full shadow">Dialpad</span>
+        <span class="bg-white px-6 py-3 rounded-full shadow">Make.com</span>
+        <span class="bg-white px-6 py-3 rounded-full shadow">Zapier</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-24 px-6 bg-gradient-to-br from-black via-slate-900 to-black text-white" data-aos="fade-up">
+    <div class="max-w-3xl mx-auto text-center">
+
+      <h2 class="text-5xl font-bold mb-6">Let's Work Together</h2>
+
+      <p class="text-gray-300 text-lg mb-10 leading-relaxed">
+        Looking for someone reliable, organized, and proactive to support your business?
+        I'd love to help.
+      </p>
+
+      <div class="space-y-4 text-xl">
+        <p>📧 your@email.com</p>
+        <p>📱 Your WhatsApp / Contact Number</p>
+        <p>🌎 Philippines | Remote</p>
+      </div>
+
+      <div class="mt-10">
+        <a href="mailto:your@email.com"
+          class="bg-white text-black px-8 py-4 rounded-2xl font-bold hover:bg-gray-200 transition inline-block">
+          Contact Me
+        </a>
+      </div>
+    </div>
+  </section>
+
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+</body>
+</html>
