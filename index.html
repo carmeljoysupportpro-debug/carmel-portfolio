@@ -1,444 +1,326 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Carmel Joy | Operations Specialist</title>
-
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <link
-    href="https://unpkg.com/aos@2.3.4/dist/aos.css"
-    rel="stylesheet"
-  />
-
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #f6fbff;
-      overflow-x: hidden;
-    }
-
-    .glass {
-      background: rgba(255, 255, 255, 0.65);
-      backdrop-filter: blur(16px);
-      border: 1px solid rgba(255, 255, 255, 0.4);
-    }
-
-    .blue-glow {
-      box-shadow: 0 0 40px rgba(59, 130, 246, 0.15);
-    }
-
-    .gradient-text {
-      background: linear-gradient(to right, #1e3a8a, #3b82f6);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .floating {
-      animation: floating 5s ease-in-out infinite;
-    }
-
-    @keyframes floating {
-      0% {
-        transform: translateY(0px);
-      }
-      50% {
-        transform: translateY(-12px);
-      }
-      100% {
-        transform: translateY(0px);
-      }
-    }
-
-    .typing::after {
-      content: "|";
-      animation: blink 1s infinite;
-    }
-
-    @keyframes blink {
-      50% {
-        opacity: 0;
-      }
-    }
-
-    .hero-bg {
-      position: absolute;
-      width: 500px;
-      height: 500px;
-      border-radius: 9999px;
-      filter: blur(120px);
-      z-index: -1;
-    }
-
-    .bg-one {
-      background: rgba(59, 130, 246, 0.15);
-      top: -120px;
-      left: -120px;
-    }
-
-    .bg-two {
-      background: rgba(96, 165, 250, 0.15);
-      right: -120px;
-      bottom: -120px;
-    }
-  </style>
-</head>
+<!-- REPLACE ONLY THE BODY CONTENT WITH THIS -->
 
 <body class="text-slate-800">
 
-  <!-- NAVBAR -->
-  <nav class="fixed top-0 left-0 w-full z-50 glass">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-
-      <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-lg">
-          CJ
-        </div>
-
-        <div>
-          <h1 class="font-bold text-lg">Carmel Joy</h1>
-          <p class="text-xs text-slate-500">
-            Operations Specialist & Customer Support
-          </p>
-        </div>
-      </div>
-
-      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
-        <a href="#home" class="hover:text-blue-600 transition">Home</a>
-        <a href="#services" class="hover:text-blue-600 transition">Services</a>
-        <a href="#experience" class="hover:text-blue-600 transition">Experience</a>
-        <a href="#tools" class="hover:text-blue-600 transition">Tools</a>
-        <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
-      </div>
-
-      <a
-        href="Delantar, Carmel Joy - RESUME.pdf"
-        target="_blank"
-        class="bg-blue-600 hover:bg-blue-700 transition text-white px-5 py-2 rounded-full text-sm blue-glow"
-      >
-        Resume
-      </a>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <section
-    id="home"
-    class="min-h-screen flex items-center justify-center relative px-6 pt-32"
-  >
-
-    <div class="hero-bg bg-one"></div>
-    <div class="hero-bg bg-two"></div>
-
-    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-
-      <!-- LEFT -->
-      <div data-aos="fade-right">
-
-        <p class="text-blue-600 font-semibold mb-4">
-          Available for Remote Opportunities
-        </p>
-
-        <h1 class="text-5xl md:text-7xl font-black leading-tight mb-6">
-          Carmel Joy
-        </h1>
-
-        <h2 class="text-2xl md:text-3xl font-semibold gradient-text mb-6">
-          Operations Specialist & Customer Support
-        </h2>
-
-        <p class="text-lg text-slate-600 leading-relaxed mb-8 max-w-xl">
-          Helping businesses deliver exceptional customer support while
-          keeping operations smooth, organized, and efficient.
-        </p>
-
-        <div class="text-blue-600 font-semibold text-lg mb-8 typing">
-          Customer Support • Operations • Mortgage Support
-        </div>
-
-        <div class="flex flex-wrap gap-4">
-
-          <a
-            href="Delantar, Carmel Joy - RESUME.pdf"
-            target="_blank"
-            class="bg-blue-600 hover:bg-blue-700 transition text-white px-7 py-4 rounded-full font-semibold blue-glow"
-          >
-            Download Resume
-          </a>
-
-          <a
-            href="#contact"
-            class="glass px-7 py-4 rounded-full font-semibold hover:scale-105 transition"
-          >
-            Contact Me
-          </a>
-
-        </div>
-      </div>
-
-      <!-- RIGHT -->
-      <div
-        class="flex justify-center"
-        data-aos="fade-left"
-      >
-
-        <div class="relative floating">
-
-          <div class="absolute inset-0 bg-blue-400 opacity-20 blur-3xl rounded-full"></div>
-
-          <img
-            src="https://i.imgur.com/IewGC83.png"
-            alt="Carmel Joy"
-            class="relative w-[350px] md:w-[420px] rounded-[40px] glass blue-glow"
-          />
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- SERVICES -->
-  <section id="services" class="py-28 px-6">
-
-    <div class="max-w-7xl mx-auto">
-
-      <div class="text-center mb-16" data-aos="fade-up">
-        <h2 class="text-5xl font-bold gradient-text mb-6">
-          How I Can Help
-        </h2>
-
-        <p class="text-slate-600 text-lg">
-          Professional support designed to help businesses stay efficient,
-          responsive, and organized.
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-8">
-
-        <div class="glass p-8 rounded-[30px] blue-glow hover:-translate-y-3 transition duration-300" data-aos="fade-up">
-          <h3 class="text-2xl font-bold mb-4">Customer Support</h3>
-          <p class="text-slate-600 leading-relaxed">
-            Professional customer communication, inquiry handling, and client-focused support.
-          </p>
-        </div>
-
-        <div class="glass p-8 rounded-[30px] blue-glow hover:-translate-y-3 transition duration-300" data-aos="fade-up">
-          <h3 class="text-2xl font-bold mb-4">Operations Support</h3>
-          <p class="text-slate-600 leading-relaxed">
-            Assisting businesses with workflow coordination and daily operational tasks.
-          </p>
-        </div>
-
-        <div class="glass p-8 rounded-[30px] blue-glow hover:-translate-y-3 transition duration-300" data-aos="fade-up">
-          <h3 class="text-2xl font-bold mb-4">Mortgage Support</h3>
-          <p class="text-slate-600 leading-relaxed">
-            Supporting U.S.-based home lending and mortgage-related customer processes.
-          </p>
-        </div>
-
-        <div class="glass p-8 rounded-[30px] blue-glow hover:-translate-y-3 transition duration-300" data-aos="fade-up">
-          <h3 class="text-2xl font-bold mb-4">Dispatch & Scheduling</h3>
-          <p class="text-slate-600 leading-relaxed">
-            Managing schedules, appointments, and dispatch coordination efficiently.
-          </p>
-        </div>
-
-        <div class="glass p-8 rounded-[30px] blue-glow hover:-translate-y-3 transition duration-300" data-aos="fade-up">
-          <h3 class="text-2xl font-bold mb-4">Administrative Assistance</h3>
-          <p class="text-slate-600 leading-relaxed">
-            Handling emails, calendars, file organization, and administrative support.
-          </p>
-        </div>
-
-        <div class="glass p-8 rounded-[30px] blue-glow hover:-translate-y-3 transition duration-300" data-aos="fade-up">
-          <h3 class="text-2xl font-bold mb-4">CRM & Workflow Coordination</h3>
-          <p class="text-slate-600 leading-relaxed">
-            Organizing systems, customer records, and workflow management.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience" class="py-28 px-6">
-
-    <div class="max-w-5xl mx-auto">
-
-      <div class="text-center mb-20" data-aos="fade-up">
-        <h2 class="text-5xl font-bold gradient-text mb-6">
-          Professional Experience
-        </h2>
-      </div>
-
-      <div class="space-y-10">
-
-        <div class="glass p-8 rounded-[30px] blue-glow" data-aos="fade-up">
-          <h3 class="text-2xl font-bold mb-2">
-            Home Lending Customer Support
-          </h3>
-
-          <p class="text-blue-600 font-semibold mb-4">
-            JPMorgan Chase & Co.
-          </p>
-
-          <p class="text-slate-600 leading-relaxed">
-            Supported U.S.-based mortgage and lending operations by assisting customers,
-            handling account-related inquiries, coordinating processes, and delivering
-            professional customer support in a fast-paced financial environment.
-          </p>
-        </div>
-
-        <div class="glass p-8 rounded-[30px] blue-glow" data-aos="fade-up">
-          <h3 class="text-2xl font-bold mb-2">
-            Operations Management & Dispatch Coordination
-          </h3>
-
-          <p class="text-blue-600 font-semibold mb-4">
-            Clean Up Cali
-          </p>
-
-          <p class="text-slate-600 leading-relaxed">
-            Managed day-to-day business operations including customer coordination,
-            scheduling, dispatch support, agreements, invoicing, and workflow organization.
-          </p>
-        </div>
-
-        <div class="glass p-8 rounded-[30px] blue-glow" data-aos="fade-up">
-          <h3 class="text-2xl font-bold mb-2">
-            Logistics & Customer Communication
-          </h3>
-
-          <p class="text-blue-600 font-semibold mb-4">
-            Tech Mahindra – UPS Broker Support
-          </p>
-
-          <p class="text-slate-600 leading-relaxed">
-            Handled shipment coordination, customs documentation, and customer communication
-            for U.S.-based logistics operations in a high-volume environment.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- TOOLS -->
-  <section id="tools" class="py-28 px-6">
-
-    <div class="max-w-7xl mx-auto">
-
-      <div class="text-center mb-16" data-aos="fade-up">
-        <h2 class="text-5xl font-bold gradient-text mb-6">
-          Remote Tools I Work With
-        </h2>
-      </div>
-
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-
-        <div class="glass p-6 rounded-[25px] text-center blue-glow">Google Workspace</div>
-        <div class="glass p-6 rounded-[25px] text-center blue-glow">Slack</div>
-        <div class="glass p-6 rounded-[25px] text-center blue-glow">Dialpad</div>
-        <div class="glass p-6 rounded-[25px] text-center blue-glow">QuickBooks</div>
-        <div class="glass p-6 rounded-[25px] text-center blue-glow">Microsoft 365</div>
-        <div class="glass p-6 rounded-[25px] text-center blue-glow">AppFolio</div>
-        <div class="glass p-6 rounded-[25px] text-center blue-glow">Canva</div>
-        <div class="glass p-6 rounded-[25px] text-center blue-glow">Google Calendar</div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="py-28 px-6">
-
-    <div class="max-w-4xl mx-auto">
-
-      <div
-        class="glass rounded-[40px] p-12 text-center blue-glow"
-        data-aos="zoom-in"
-      >
-
-        <h2 class="text-5xl font-bold gradient-text mb-6">
-          Let’s Work Together
-        </h2>
-
-        <p class="text-slate-600 text-lg leading-relaxed mb-10">
-          Helping businesses stay organized, responsive, and efficient
-          through professional customer support and operations management.
-        </p>
-
-        <div class="flex flex-wrap justify-center gap-5">
-
-          <a
-            href="mailto:carmeljoy.supportpro@gmail.com"
-            class="bg-blue-600 hover:bg-blue-700 transition text-white px-8 py-4 rounded-full font-semibold blue-glow"
-          >
-            Email Me
-          </a>
-
-          <a
-            href="https://wa.me/639954755949"
-            target="_blank"
-            class="glass px-8 py-4 rounded-full font-semibold hover:scale-105 transition"
-          >
-            WhatsApp
-          </a>
-
-        </div>
-
-        <p class="mt-10 text-blue-600 font-medium">
-          Available for Remote Opportunities
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="py-10 text-center text-slate-500">
-
-    <div class="flex items-center justify-center gap-3 mb-3">
-
-      <div class="w-9 h-9 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold">
+<!-- NAVBAR -->
+<nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-white/10 border-b border-white/10">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+    <div class="flex items-center gap-3">
+      <div class="w-11 h-11 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 text-white flex items-center justify-center font-bold text-lg shadow-lg shadow-blue-500/30">
         CJ
       </div>
 
-      <h3 class="font-semibold text-slate-700">
-        Carmel Joy
-      </h3>
-
+      <div>
+        <h1 class="font-bold text-lg text-white">Carmel Joy</h1>
+        <p class="text-xs text-slate-300">
+          Operations Specialist & Customer Support
+        </p>
+      </div>
     </div>
 
-    <p>
-      Operations Specialist & Customer Support
-    </p>
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium text-white">
+      <a href="#home" class="hover:text-cyan-300 transition">Home</a>
+      <a href="#services" class="hover:text-cyan-300 transition">Services</a>
+      <a href="#experience" class="hover:text-cyan-300 transition">Experience</a>
+      <a href="#tools" class="hover:text-cyan-300 transition">Tools</a>
+      <a href="#contact" class="hover:text-cyan-300 transition">Contact</a>
+    </div>
 
-  </footer>
+    <a
+      href="Delantar, Carmel Joy - RESUME(1).pdf"
+      target="_blank"
+      class="bg-gradient-to-r from-blue-500 to-cyan-400 hover:scale-105 transition text-white px-6 py-3 rounded-full text-sm font-semibold shadow-xl shadow-blue-500/20"
+    >
+      Resume
+    </a>
 
-  <script>
-    AOS.init({
-      duration: 1000,
-      once: true
-    });
-  </script>
+  </div>
+</nav>
 
+<!-- HERO -->
+<section
+  id="home"
+  class="relative min-h-screen flex items-center overflow-hidden bg-[#071120]"
+>
+
+<!-- BACKGROUND GLOW -->
+<div class="absolute w-[500px] h-[500px] bg-blue-500/20 blur-[120px] rounded-full top-[-120px] left-[-120px]"></div>
+
+<div class="absolute w-[500px] h-[500px] bg-cyan-400/10 blur-[120px] rounded-full bottom-[-120px] right-[-120px]"></div>
+
+<!-- GRID -->
+<div class="max-w-7xl mx-auto px-6 pt-36 pb-24 grid md:grid-cols-2 gap-16 items-center relative z-10">
+
+<!-- LEFT -->
+<div data-aos="fade-right">
+
+<p class="text-cyan-300 font-semibold mb-5 tracking-wide">
+Available for Remote Opportunities
+</p>
+
+<h1 class="text-6xl md:text-7xl font-black text-white leading-tight mb-6">
+Carmel Joy
+</h1>
+
+<h2 class="text-2xl md:text-3xl font-semibold bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent mb-6">
+Operations Specialist & Customer Support
+</h2>
+
+<p class="text-slate-300 text-lg leading-relaxed max-w-xl mb-8">
+Helping businesses deliver exceptional customer support while keeping operations smooth, organized, and efficient.
+</p>
+
+<div class="flex flex-wrap gap-5">
+
+<a
+href="Delantar, Carmel Joy - RESUME(1).pdf"
+target="_blank"
+class="bg-gradient-to-r from-blue-500 to-cyan-400 hover:scale-105 transition duration-300 text-white px-8 py-4 rounded-full font-semibold shadow-xl shadow-blue-500/20"
+>
+Download Resume
+</a>
+
+<a
+href="#contact"
+class="border border-white/20 text-white px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition"
+>
+Contact Me
+</a>
+
+</div>
+
+</div>
+
+<!-- RIGHT -->
+<div class="flex justify-center" data-aos="fade-left">
+
+<div class="relative">
+
+<div class="absolute inset-0 bg-cyan-400/20 blur-3xl rounded-full"></div>
+
+<img
+src="https://i.imgur.com/L1GmU3W.jpeg"
+alt="Carmel Joy"
+class="relative w-[380px] rounded-[40px] border border-white/10 shadow-2xl shadow-cyan-500/20 animate-[float_5s_ease-in-out_infinite]"
+/>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- CURVED DIVIDER -->
+<div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+<svg
+class="relative block w-full h-[100px]"
+xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 1440 320"
+>
+<path
+fill="#f8fbff"
+fill-opacity="1"
+d="M0,160L60,149.3C120,139,240,117,360,133.3C480,149,600,203,720,202.7C840,203,960,149,1080,144C1200,139,1320,181,1380,202.7L1440,224L1440,320L0,320Z"
+></path>
+</svg>
+</div>
+
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-28 px-6 bg-[#f8fbff]">
+
+<div class="max-w-7xl mx-auto">
+
+<div class="text-center mb-20" data-aos="fade-up">
+
+<h2 class="text-5xl font-black mb-6 text-slate-800">
+How I Can Help
+</h2>
+
+<p class="text-slate-500 text-lg">
+Professional support designed to help businesses stay efficient and organized.
+</p>
+
+</div>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<!-- CARD -->
+<div class="bg-gradient-to-br from-blue-500 to-cyan-400 p-[1px] rounded-[35px] hover:-translate-y-3 transition duration-300">
+
+<div class="bg-white rounded-[35px] p-8 h-full">
+
+<div class="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center text-2xl mb-6">
+💬
+</div>
+
+<h3 class="text-2xl font-bold mb-4">
+Customer Support
+</h3>
+
+<p class="text-slate-500 leading-relaxed">
+Professional communication, inquiry handling, and customer-focused support.
+</p>
+
+</div>
+</div>
+
+<!-- CARD -->
+<div class="bg-gradient-to-br from-cyan-400 to-blue-500 p-[1px] rounded-[35px] hover:-translate-y-3 transition duration-300">
+
+<div class="bg-white rounded-[35px] p-8 h-full">
+
+<div class="w-14 h-14 rounded-2xl bg-cyan-100 flex items-center justify-center text-2xl mb-6">
+⚙️
+</div>
+
+<h3 class="text-2xl font-bold mb-4">
+Operations Support
+</h3>
+
+<p class="text-slate-500 leading-relaxed">
+Workflow coordination and operational support for growing businesses.
+</p>
+
+</div>
+</div>
+
+<!-- CARD -->
+<div class="bg-gradient-to-br from-violet-500 to-blue-500 p-[1px] rounded-[35px] hover:-translate-y-3 transition duration-300">
+
+<div class="bg-white rounded-[35px] p-8 h-full">
+
+<div class="w-14 h-14 rounded-2xl bg-violet-100 flex items-center justify-center text-2xl mb-6">
+🏦
+</div>
+
+<h3 class="text-2xl font-bold mb-4">
+Mortgage Support
+</h3>
+
+<p class="text-slate-500 leading-relaxed">
+Supporting U.S.-based mortgage and home lending customer processes.
+</p>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="py-28 px-6 bg-white">
+
+<div class="max-w-5xl mx-auto">
+
+<div class="text-center mb-20" data-aos="fade-up">
+
+<h2 class="text-5xl font-black text-slate-800 mb-6">
+Professional Experience
+</h2>
+
+</div>
+
+<div class="space-y-10">
+
+<!-- CARD -->
+<div class="relative bg-gradient-to-r from-blue-500 to-cyan-400 p-[1px] rounded-[35px] hover:-translate-y-2 transition duration-300">
+
+<div class="bg-white rounded-[35px] p-8">
+
+<div class="flex items-center gap-5 mb-5">
+
+<div class="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center text-2xl">
+🏦
+</div>
+
+<div>
+<h3 class="text-2xl font-bold">
+JPMorgan Chase & Co.
+</h3>
+
+<p class="text-blue-600 font-medium">
+Home Lending Customer Support
+</p>
+</div>
+
+</div>
+
+<p class="text-slate-500 leading-relaxed">
+Supported U.S.-based mortgage and lending operations by assisting customers, handling inquiries, and delivering professional customer support in a fast-paced financial environment.
+</p>
+
+</div>
+</div>
+
+<!-- CARD -->
+<div class="relative bg-gradient-to-r from-cyan-400 to-blue-500 p-[1px] rounded-[35px] hover:-translate-y-2 transition duration-300">
+
+<div class="bg-white rounded-[35px] p-8">
+
+<div class="flex items-center gap-5 mb-5">
+
+<div class="w-14 h-14 rounded-2xl bg-cyan-100 flex items-center justify-center text-2xl">
+⚙️
+</div>
+
+<div>
+<h3 class="text-2xl font-bold">
+Clean Up Cali
+</h3>
+
+<p class="text-cyan-600 font-medium">
+Operations Management & Dispatch Coordination
+</p>
+</div>
+
+</div>
+
+<p class="text-slate-500 leading-relaxed">
+Managed customer coordination, scheduling, dispatch support, invoicing, and workflow organization while maintaining excellent client communication.
+</p>
+
+</div>
+</div>
+
+<!-- CARD -->
+<div class="relative bg-gradient-to-r from-violet-500 to-blue-500 p-[1px] rounded-[35px] hover:-translate-y-2 transition duration-300">
+
+<div class="bg-white rounded-[35px] p-8">
+
+<div class="flex items-center gap-5 mb-5">
+
+<div class="w-14 h-14 rounded-2xl bg-violet-100 flex items-center justify-center text-2xl">
+🚚
+</div>
+
+<div>
+<h3 class="text-2xl font-bold">
+Tech Mahindra
+</h3>
+
+<p class="text-violet-600 font-medium">
+UPS Broker Support
+</p>
+</div>
+
+</div>
+
+<p class="text-slate-500 leading-relaxed">
+Handled shipment coordination, customs documentation, and customer communication for U.S.-based logistics operations.
+</p>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
 </body>
-</html>
