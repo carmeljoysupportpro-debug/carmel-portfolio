@@ -1,156 +1,398 @@
-<!-- SERVICES -->
-<section id="services" class="py-28 px-6 bg-[#f6fbff]">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <div class="max-w-7xl mx-auto">
+  <title>Carmel Joy | Operations Specialist</title>
 
-    <div class="text-center mb-16" data-aos="fade-up">
+  <script src="https://cdn.tailwindcss.com"></script>
 
-      <h2 class="text-5xl font-bold gradient-text mb-6">
-        How I Can Help
-      </h2>
+  <link
+    href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+    rel="stylesheet"
+  />
 
-      <p class="text-slate-600 text-lg">
-        Professional support designed to help businesses stay efficient,
-        responsive, and organized.
-      </p>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f6fbff;
+      overflow-x: hidden;
+    }
+
+    .glass {
+      background: rgba(255,255,255,0.65);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,255,255,0.4);
+    }
+
+    .blue-glow {
+      box-shadow: 0 0 40px rgba(59,130,246,0.15);
+    }
+
+    .gradient-text {
+      background: linear-gradient(to right,#60a5fa,#2563eb);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .floating {
+      animation: floating 5s ease-in-out infinite;
+    }
+
+    @keyframes floating {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-12px); }
+      100% { transform: translateY(0px); }
+    }
+
+    .typing::after {
+      content: "|";
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    .hero-bg {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      border-radius: 9999px;
+      filter: blur(120px);
+      z-index: -1;
+    }
+
+    .bg-one {
+      background: rgba(59,130,246,0.15);
+      top: -120px;
+      left: -120px;
+    }
+
+    .bg-two {
+      background: rgba(96,165,250,0.15);
+      right: -120px;
+      bottom: -120px;
+    }
+  </style>
+</head>
+
+<body class="text-slate-800">
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 left-0 w-full z-50 glass">
+
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <div class="flex items-center gap-3">
+
+        <div class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-lg">
+          CJ
+        </div>
+
+        <div>
+          <h1 class="font-bold text-lg">
+            Carmel Joy
+          </h1>
+
+          <p class="text-xs text-slate-500">
+            Operations Specialist & Customer Support
+          </p>
+        </div>
+
+      </div>
+
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+
+        <a href="#home" class="hover:text-blue-600 transition">
+          Home
+        </a>
+
+        <a href="#services" class="hover:text-blue-600 transition">
+          Services
+        </a>
+
+        <a href="#experience" class="hover:text-blue-600 transition">
+          Experience
+        </a>
+
+        <a href="#tools" class="hover:text-blue-600 transition">
+          Tools
+        </a>
+
+        <a href="#contact" class="hover:text-blue-600 transition">
+          Contact
+        </a>
+
+      </div>
+
+      <a
+        href="Delantar, Carmel Joy - RESUME.pdf"
+        target="_blank"
+        class="bg-blue-600 hover:bg-blue-700 transition text-white px-5 py-2 rounded-full text-sm blue-glow"
+      >
+        Resume
+      </a>
+
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section
+    id="home"
+    class="min-h-screen flex items-center justify-center relative px-6 pt-32 bg-[#071120] overflow-hidden"
+  >
+
+    <div class="absolute w-[500px] h-[500px] bg-blue-500/20 blur-[120px] rounded-full top-[-120px] left-[-120px]"></div>
+
+    <div class="absolute w-[500px] h-[500px] bg-cyan-400/10 blur-[120px] rounded-full bottom-[-120px] right-[-120px]"></div>
+
+    <div class="hero-bg bg-one"></div>
+    <div class="hero-bg bg-two"></div>
+
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+
+      <!-- LEFT -->
+      <div data-aos="fade-right">
+
+        <p class="text-blue-400 font-semibold mb-4">
+          Available for Remote Opportunities
+        </p>
+
+        <h1 class="text-5xl md:text-7xl font-black leading-tight mb-6 text-white">
+          Carmel Joy
+        </h1>
+
+        <h2 class="text-2xl md:text-3xl font-semibold gradient-text mb-6">
+          Operations Specialist & Customer Support
+        </h2>
+
+        <p class="text-lg text-slate-300 leading-relaxed mb-8 max-w-xl">
+          Helping businesses deliver exceptional customer support while
+          keeping operations smooth, organized, and efficient.
+        </p>
+
+        <div class="text-blue-400 font-semibold text-lg mb-8 typing">
+          Customer Support • Operations • Mortgage Support
+        </div>
+
+        <div class="flex flex-wrap gap-4">
+
+          <a
+            href="Delantar, Carmel Joy - RESUME.pdf"
+            target="_blank"
+            class="bg-blue-600 hover:bg-blue-700 transition text-white px-7 py-4 rounded-full font-semibold blue-glow"
+          >
+            Download Resume
+          </a>
+
+          <a
+            href="#contact"
+            class="border border-white/20 text-white px-7 py-4 rounded-full font-semibold hover:bg-white/10 transition"
+          >
+            Contact Me
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+      <div
+        class="flex justify-center"
+        data-aos="fade-left"
+      >
+
+        <div class="relative floating">
+
+          <div class="absolute inset-0 bg-blue-400 opacity-20 blur-3xl rounded-full"></div>
+
+          <img
+            src="https://i.imgur.com/IewGC83.png"
+            alt="Carmel Joy"
+            class="relative w-[350px] md:w-[420px] rounded-[40px] glass blue-glow"
+          />
+
+        </div>
+
+      </div>
 
     </div>
 
-    <div class="grid md:grid-cols-3 gap-8">
+  </section>
 
-      <!-- CARD -->
-      <div class="group relative overflow-hidden rounded-[32px] p-[1px] bg-gradient-to-br from-blue-500 to-cyan-400 hover:scale-[1.03] hover:shadow-[0_0_30px_rgba(59,130,246,0.25)] transition duration-500" data-aos="fade-up">
+  <!-- SERVICES -->
+  <section id="services" class="py-28 px-6 bg-[#f6fbff]">
 
-        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-white/10"></div>
+    <div class="max-w-7xl mx-auto">
 
-        <div class="relative bg-white/80 backdrop-blur-xl rounded-[32px] p-10 h-full">
+      <div class="text-center mb-16" data-aos="fade-up">
 
-          <div class="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center mb-6 text-2xl">
-            💬
-          </div>
+        <h2 class="text-5xl font-bold gradient-text mb-6">
+          How I Can Help
+        </h2>
 
-          <h3 class="text-2xl font-bold mb-4">
-            Customer Support
-          </h3>
+        <p class="text-slate-600 text-lg">
+          Professional support designed to help businesses stay efficient,
+          responsive, and organized.
+        </p>
 
-          <p class="text-slate-600 leading-relaxed">
-            Professional customer communication, inquiry handling, and client-focused support.
-          </p>
-
-        </div>
       </div>
 
-      <!-- CARD -->
-      <div class="group relative overflow-hidden rounded-[32px] p-[1px] bg-gradient-to-br from-blue-500 to-cyan-400 hover:scale-[1.03] hover:shadow-[0_0_30px_rgba(59,130,246,0.25)] transition duration-500" data-aos="fade-up">
+      <div class="grid md:grid-cols-3 gap-8">
 
-        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-white/10"></div>
+        <!-- CARD -->
+        <div class="group relative overflow-hidden rounded-[32px] p-[1px] bg-gradient-to-br from-blue-500 to-cyan-400 hover:scale-[1.03] hover:shadow-[0_0_30px_rgba(59,130,246,0.25)] transition duration-500" data-aos="fade-up">
 
-        <div class="relative bg-white/80 backdrop-blur-xl rounded-[32px] p-10 h-full">
+          <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-white/10"></div>
 
-          <div class="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center mb-6 text-2xl">
-            ⚙️
+          <div class="relative bg-white/80 backdrop-blur-xl rounded-[32px] p-10 h-full">
+
+            <div class="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center mb-6 text-2xl">
+              💬
+            </div>
+
+            <h3 class="text-2xl font-bold mb-4">
+              Customer Support
+            </h3>
+
+            <p class="text-slate-600 leading-relaxed">
+              Professional customer communication, inquiry handling, and client-focused support.
+            </p>
+
           </div>
-
-          <h3 class="text-2xl font-bold mb-4">
-            Operations Support
-          </h3>
-
-          <p class="text-slate-600 leading-relaxed">
-            Assisting businesses with workflow coordination and daily operational tasks.
-          </p>
-
         </div>
-      </div>
 
-      <!-- CARD -->
-      <div class="group relative overflow-hidden rounded-[32px] p-[1px] bg-gradient-to-br from-blue-500 to-cyan-400 hover:scale-[1.03] hover:shadow-[0_0_30px_rgba(59,130,246,0.25)] transition duration-500" data-aos="fade-up">
+        <!-- CARD -->
+        <div class="group relative overflow-hidden rounded-[32px] p-[1px] bg-gradient-to-br from-blue-500 to-cyan-400 hover:scale-[1.03] hover:shadow-[0_0_30px_rgba(59,130,246,0.25)] transition duration-500" data-aos="fade-up">
 
-        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-white/10"></div>
+          <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-white/10"></div>
 
-        <div class="relative bg-white/80 backdrop-blur-xl rounded-[32px] p-10 h-full">
+          <div class="relative bg-white/80 backdrop-blur-xl rounded-[32px] p-10 h-full">
 
-          <div class="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center mb-6 text-2xl">
-            🏦
+            <div class="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center mb-6 text-2xl">
+              ⚙️
+            </div>
+
+            <h3 class="text-2xl font-bold mb-4">
+              Operations Support
+            </h3>
+
+            <p class="text-slate-600 leading-relaxed">
+              Assisting businesses with workflow coordination and daily operational tasks.
+            </p>
+
           </div>
-
-          <h3 class="text-2xl font-bold mb-4">
-            Mortgage Support
-          </h3>
-
-          <p class="text-slate-600 leading-relaxed">
-            Supporting U.S.-based home lending and mortgage-related customer processes.
-          </p>
-
         </div>
-      </div>
 
-      <!-- CARD -->
-      <div class="group relative overflow-hidden rounded-[32px] p-[1px] bg-gradient-to-br from-blue-500 to-cyan-400 hover:scale-[1.03] hover:shadow-[0_0_30px_rgba(59,130,246,0.25)] transition duration-500" data-aos="fade-up">
+        <!-- CARD -->
+        <div class="group relative overflow-hidden rounded-[32px] p-[1px] bg-gradient-to-br from-blue-500 to-cyan-400 hover:scale-[1.03] hover:shadow-[0_0_30px_rgba(59,130,246,0.25)] transition duration-500" data-aos="fade-up">
 
-        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-white/10"></div>
+          <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-white/10"></div>
 
-        <div class="relative bg-white/80 backdrop-blur-xl rounded-[32px] p-10 h-full">
+          <div class="relative bg-white/80 backdrop-blur-xl rounded-[32px] p-10 h-full">
 
-          <div class="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center mb-6 text-2xl">
-            📅
+            <div class="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center mb-6 text-2xl">
+              🏦
+            </div>
+
+            <h3 class="text-2xl font-bold mb-4">
+              Mortgage Support
+            </h3>
+
+            <p class="text-slate-600 leading-relaxed">
+              Supporting U.S.-based home lending and mortgage-related customer processes.
+            </p>
+
           </div>
-
-          <h3 class="text-2xl font-bold mb-4">
-            Dispatch & Scheduling
-          </h3>
-
-          <p class="text-slate-600 leading-relaxed">
-            Managing schedules, appointments, and dispatch coordination efficiently.
-          </p>
-
         </div>
-      </div>
 
-      <!-- CARD -->
-      <div class="group relative overflow-hidden rounded-[32px] p-[1px] bg-gradient-to-br from-blue-500 to-cyan-400 hover:scale-[1.03] hover:shadow-[0_0_30px_rgba(59,130,246,0.25)] transition duration-500" data-aos="fade-up">
+        <!-- CARD -->
+        <div class="group relative overflow-hidden rounded-[32px] p-[1px] bg-gradient-to-br from-blue-500 to-cyan-400 hover:scale-[1.03] hover:shadow-[0_0_30px_rgba(59,130,246,0.25)] transition duration-500" data-aos="fade-up">
 
-        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-white/10"></div>
+          <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-white/10"></div>
 
-        <div class="relative bg-white/80 backdrop-blur-xl rounded-[32px] p-10 h-full">
+          <div class="relative bg-white/80 backdrop-blur-xl rounded-[32px] p-10 h-full">
 
-          <div class="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center mb-6 text-2xl">
-            🗂️
+            <div class="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center mb-6 text-2xl">
+              📅
+            </div>
+
+            <h3 class="text-2xl font-bold mb-4">
+              Dispatch & Scheduling
+            </h3>
+
+            <p class="text-slate-600 leading-relaxed">
+              Managing schedules, appointments, and dispatch coordination efficiently.
+            </p>
+
           </div>
-
-          <h3 class="text-2xl font-bold mb-4">
-            Administrative Assistance
-          </h3>
-
-          <p class="text-slate-600 leading-relaxed">
-            Handling emails, calendars, file organization, and administrative support.
-          </p>
-
         </div>
-      </div>
 
-      <!-- CARD -->
-      <div class="group relative overflow-hidden rounded-[32px] p-[1px] bg-gradient-to-br from-blue-500 to-cyan-400 hover:scale-[1.03] hover:shadow-[0_0_30px_rgba(59,130,246,0.25)] transition duration-500" data-aos="fade-up">
+        <!-- CARD -->
+        <div class="group relative overflow-hidden rounded-[32px] p-[1px] bg-gradient-to-br from-blue-500 to-cyan-400 hover:scale-[1.03] hover:shadow-[0_0_30px_rgba(59,130,246,0.25)] transition duration-500" data-aos="fade-up">
 
-        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-white/10"></div>
+          <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-white/10"></div>
 
-        <div class="relative bg-white/80 backdrop-blur-xl rounded-[32px] p-10 h-full">
+          <div class="relative bg-white/80 backdrop-blur-xl rounded-[32px] p-10 h-full">
 
-          <div class="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center mb-6 text-2xl">
-            📊
+            <div class="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center mb-6 text-2xl">
+              🗂️
+            </div>
+
+            <h3 class="text-2xl font-bold mb-4">
+              Administrative Assistance
+            </h3>
+
+            <p class="text-slate-600 leading-relaxed">
+              Handling emails, calendars, file organization, and administrative support.
+            </p>
+
           </div>
-
-          <h3 class="text-2xl font-bold mb-4">
-            CRM & Workflow Coordination
-          </h3>
-
-          <p class="text-slate-600 leading-relaxed">
-            Organizing systems, customer records, and workflow management.
-          </p>
-
         </div>
-      </div>
 
+        <!-- CARD -->
+        <div class="group relative overflow-hidden rounded-[32px] p-[1px] bg-gradient-to-br from-blue-500 to-cyan-400 hover:scale-[1.03] hover:shadow-[0_0_30px_rgba(59,130,246,0.25)] transition duration-500" data-aos="fade-up">
+
+          <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-white/10"></div>
+
+          <div class="relative bg-white/80 backdrop-blur-xl rounded-[32px] p-10 h-full">
+
+            <div class="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center mb-6 text-2xl">
+              📊
+            </div>
+
+            <h3 class="text-2xl font-bold mb-4">
+              CRM & Workflow Coordination
+            </h3>
+
+            <p class="text-slate-600 leading-relaxed">
+              Organizing systems, customer records, and workflow management.
+            </p>
+
+          </div>
+        </div>
+
+      </div>
     </div>
-  </div>
 
-</section>
+  </section>
+
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
+</body>
+</html>
