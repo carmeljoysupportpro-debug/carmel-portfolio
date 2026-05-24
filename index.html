@@ -1,545 +1,843 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <title>Carmel Joy | Operations Specialist</title>
+<title>Carmel Joy | Operations Specialist</title>
 
-  <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.tailwindcss.com"></script>
 
-  <link
-    href="https://unpkg.com/aos@2.3.4/dist/aos.css"
-    rel="stylesheet"
-  />
+<link
+  href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+  rel="stylesheet"
+/>
 
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet"
-  />
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+  rel="stylesheet"
+/>
 
-  <style>
+<style>
 
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-    }
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-    html{
-      scroll-behavior:smooth;
-    }
+html{
+  scroll-behavior:smooth;
+}
 
-    body{
-      font-family:'Poppins',sans-serif;
-      background:#071120;
-      overflow-x:hidden;
-      color:white;
-    }
+body{
+  font-family:'Poppins',sans-serif;
+  background:#071120;
+  overflow-x:hidden;
+  color:white;
+}
 
-    .grid-bg{
-      position:fixed;
-      inset:0;
-      z-index:0;
-      opacity:.04;
-      pointer-events:none;
-    }
+/* GRID */
 
-    .grid-bg::before{
-      content:"";
-      position:absolute;
-      inset:0;
-      background-image:
-      linear-gradient(rgba(255,255,255,.5) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255,255,255,.5) 1px, transparent 1px);
-      background-size:60px 60px;
-    }
+.grid-bg{
+  position:fixed;
+  inset:0;
+  z-index:0;
+  opacity:.04;
+  pointer-events:none;
+}
 
-    .particles{
-      position:fixed;
-      inset:0;
-      overflow:hidden;
-      pointer-events:none;
-      z-index:0;
-    }
+.grid-bg::before{
+  content:"";
+  position:absolute;
+  inset:0;
 
-    .particles span{
-      position:absolute;
-      display:block;
-      width:4px;
-      height:4px;
-      background:rgba(255,255,255,.15);
-      border-radius:999px;
-      animation:floatParticle linear infinite;
-    }
+  background-image:
+  linear-gradient(rgba(255,255,255,.5) 1px, transparent 1px),
+  linear-gradient(90deg, rgba(255,255,255,.5) 1px, transparent 1px);
 
-    .particles span:nth-child(1){ left:10%; animation-duration:18s; }
-    .particles span:nth-child(2){ left:20%; animation-duration:25s; }
-    .particles span:nth-child(3){ left:35%; animation-duration:20s; }
-    .particles span:nth-child(4){ left:50%; animation-duration:28s; }
-    .particles span:nth-child(5){ left:65%; animation-duration:22s; }
-    .particles span:nth-child(6){ left:75%; animation-duration:26s; }
-    .particles span:nth-child(7){ left:85%; animation-duration:19s; }
-    .particles span:nth-child(8){ left:95%; animation-duration:24s; }
+  background-size:60px 60px;
+}
 
-    @keyframes floatParticle{
-      0%{
-        transform:translateY(110vh);
-        opacity:0;
-      }
-      10%{
-        opacity:1;
-      }
-      100%{
-        transform:translateY(-10vh);
-        opacity:0;
-      }
-    }
+/* PARTICLES */
 
-    .glass-nav{
-      background:rgba(7,17,32,.55);
-      backdrop-filter:blur(20px);
-      border-bottom:1px solid rgba(255,255,255,.06);
-      transition:all .4s ease;
-    }
+.particles{
+  position:fixed;
+  inset:0;
+  overflow:hidden;
+  pointer-events:none;
+  z-index:0;
+}
 
-    .gradient-text{
-      background:linear-gradient(to right,#60a5fa,#38bdf8);
-      -webkit-background-clip:text;
-      -webkit-text-fill-color:transparent;
-    }
+.particles span{
+  position:absolute;
+  width:4px;
+  height:4px;
+  background:rgba(255,255,255,.15);
+  border-radius:999px;
+  animation:floatParticle linear infinite;
+}
 
-    .hero-bg{
-      position:absolute;
-      width:650px;
-      height:650px;
-      border-radius:9999px;
-      filter:blur(140px);
-      z-index:0;
-    }
+.particles span:nth-child(1){ left:10%; animation-duration:18s; }
+.particles span:nth-child(2){ left:20%; animation-duration:25s; }
+.particles span:nth-child(3){ left:35%; animation-duration:20s; }
+.particles span:nth-child(4){ left:50%; animation-duration:28s; }
+.particles span:nth-child(5){ left:65%; animation-duration:22s; }
+.particles span:nth-child(6){ left:75%; animation-duration:26s; }
+.particles span:nth-child(7){ left:85%; animation-duration:19s; }
+.particles span:nth-child(8){ left:95%; animation-duration:24s; }
 
-    .bg-one{
-      background:rgba(59,130,246,.22);
-      top:-200px;
-      left:-200px;
-      animation:blob1 10s infinite alternate ease-in-out;
-    }
+@keyframes floatParticle{
 
-    .bg-two{
-      background:rgba(14,165,233,.18);
-      bottom:-200px;
-      right:-200px;
-      animation:blob2 12s infinite alternate ease-in-out;
-    }
+  0%{
+    transform:translateY(110vh);
+    opacity:0;
+  }
 
-    @keyframes blob1{
-      from{ transform:translateY(0px); }
-      to{ transform:translateY(40px); }
-    }
+  10%{
+    opacity:1;
+  }
 
-    @keyframes blob2{
-      from{ transform:translateX(0px); }
-      to{ transform:translateX(-40px); }
-    }
+  100%{
+    transform:translateY(-10vh);
+    opacity:0;
+  }
 
-    .floating{
-      animation:floating 6s ease-in-out infinite;
-    }
+}
 
-    @keyframes floating{
-      0%{ transform:translateY(0px); }
-      50%{ transform:translateY(-16px); }
-      100%{ transform:translateY(0px); }
-    }
+/* NAV */
 
-    .typing::after{
-      content:"|";
-      animation:blink 1s infinite;
-    }
+.glass-nav{
+  background:rgba(7,17,32,.55);
+  backdrop-filter:blur(20px);
+  border-bottom:1px solid rgba(255,255,255,.06);
+  transition:all .4s ease;
+}
 
-    @keyframes blink{
-      50%{ opacity:0; }
-    }
+/* TEXT */
 
-    .premium-card{
-      position:relative;
-      overflow:hidden;
-      transition:all .45s ease;
-      isolation:isolate;
-    }
+.gradient-text{
+  background:linear-gradient(to right,#60a5fa,#38bdf8);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
 
-    .premium-card::before{
-      content:"";
-      position:absolute;
-      width:240px;
-      height:240px;
-      background:radial-gradient(circle, rgba(59,130,246,.25), transparent 70%);
-      top:var(--y);
-      left:var(--x);
-      transform:translate(-50%,-50%);
-      opacity:0;
-      transition:opacity .4s ease;
-      pointer-events:none;
-      z-index:0;
-    }
+/* HERO BLOBS */
 
-    .premium-card:hover::before{
-      opacity:1;
-    }
+.hero-bg{
+  position:absolute;
+  width:650px;
+  height:650px;
+  border-radius:9999px;
+  filter:blur(140px);
+  z-index:0;
+}
 
-    .premium-card:hover{
-      transform:translateY(-12px) scale(1.02);
-      box-shadow:
-      0 25px 60px rgba(59,130,246,.18),
-      0 0 40px rgba(59,130,246,.12);
-    }
+.bg-one{
+  background:rgba(59,130,246,.22);
+  top:-200px;
+  left:-200px;
+  animation:blob1 10s infinite alternate ease-in-out;
+}
 
-    .glass-card{
-      background:rgba(255,255,255,.08);
-      backdrop-filter:blur(24px);
-      border:1px solid rgba(255,255,255,.08);
-    }
+.bg-two{
+  background:rgba(14,165,233,.18);
+  bottom:-200px;
+  right:-200px;
+  animation:blob2 12s infinite alternate ease-in-out;
+}
 
-    .glow-btn{
-      position:relative;
-      overflow:hidden;
-      transition:all .4s ease;
-      box-shadow:0 0 30px rgba(59,130,246,.35);
-    }
+@keyframes blob1{
+  from{ transform:translateY(0px); }
+  to{ transform:translateY(40px); }
+}
 
-    .glow-btn:hover{
-      transform:translateY(-2px) scale(1.03);
-      box-shadow:0 0 45px rgba(59,130,246,.5);
-    }
+@keyframes blob2{
+  from{ transform:translateX(0px); }
+  to{ transform:translateX(-40px); }
+}
 
-    ::-webkit-scrollbar{
-      width:10px;
-    }
+/* FLOAT */
 
-    ::-webkit-scrollbar-track{
-      background:#071120;
-    }
+.floating{
+  animation:floating 6s ease-in-out infinite;
+}
 
-    ::-webkit-scrollbar-thumb{
-      background:#1e3a5f;
-      border-radius:999px;
-    }
+@keyframes floating{
+  0%{ transform:translateY(0px); }
+  50%{ transform:translateY(-16px); }
+  100%{ transform:translateY(0px); }
+}
 
-    @media(max-width:768px){
+/* TYPING */
 
-      h1{
-        line-height:1.1 !important;
-      }
+.typing::after{
+  content:"|";
+  animation:blink 1s infinite;
+}
 
-      .hero-bg{
-        width:350px;
-        height:350px;
-      }
+@keyframes blink{
+  50%{ opacity:0; }
+}
 
-    }
+/* CARD */
 
-  </style>
+.premium-card{
+  position:relative;
+  overflow:hidden;
+  transition:all .45s ease;
+  isolation:isolate;
+}
+
+.premium-card::before{
+  content:"";
+  position:absolute;
+  width:240px;
+  height:240px;
+
+  background:
+  radial-gradient(
+    circle,
+    rgba(59,130,246,.25),
+    transparent 70%
+  );
+
+  top:var(--y);
+  left:var(--x);
+
+  transform:translate(-50%,-50%);
+  opacity:0;
+  transition:opacity .4s ease;
+  pointer-events:none;
+  z-index:0;
+}
+
+.premium-card:hover::before{
+  opacity:1;
+}
+
+.premium-card:hover{
+  transform:
+  translateY(-12px)
+  scale(1.02);
+
+  box-shadow:
+  0 25px 60px rgba(59,130,246,.18),
+  0 0 40px rgba(59,130,246,.12);
+}
+
+/* GLASS */
+
+.glass-card{
+  background:rgba(255,255,255,.08);
+  backdrop-filter:blur(24px);
+  border:1px solid rgba(255,255,255,.08);
+}
+
+/* BUTTON */
+
+.glow-btn{
+  position:relative;
+  overflow:hidden;
+  transition:all .4s ease;
+  box-shadow:0 0 30px rgba(59,130,246,.35);
+}
+
+.glow-btn:hover{
+  transform:translateY(-2px) scale(1.03);
+  box-shadow:0 0 45px rgba(59,130,246,.5);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  h1{
+    line-height:1.1 !important;
+  }
+
+  .hero-bg{
+    width:350px;
+    height:350px;
+  }
+
+}
+
+</style>
 
 </head>
 
 <body>
 
-  <div class="grid-bg"></div>
+<!-- GRID -->
+<div class="grid-bg"></div>
 
-  <div class="particles">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
+<!-- PARTICLES -->
+<div class="particles">
 
-  <nav class="fixed top-0 left-0 w-full z-50 glass-nav">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
 
-    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+</div>
 
-      <div class="flex items-center gap-4">
+<!-- NAVBAR -->
+<nav class="fixed top-0 left-0 w-full z-50 glass-nav">
 
-        <div class="w-12 h-12 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center font-bold shadow-xl">
-          CJ
-        </div>
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
-        <div>
-          <h1 class="font-bold text-xl">
-            Carmel Joy
-          </h1>
+    <!-- LOGO -->
+    <div class="flex items-center gap-4">
 
-          <p class="text-sm text-slate-300">
-            Operations Specialist
-          </p>
-        </div>
-
-      </div>
-
-      <div class="hidden md:flex items-center gap-10 text-sm font-medium">
-        <a href="#home" class="hover:text-cyan-300 transition">Home</a>
-        <a href="#services" class="hover:text-cyan-300 transition">Services</a>
-        <a href="#experience" class="hover:text-cyan-300 transition">Experience</a>
-        <a href="#tools" class="hover:text-cyan-300 transition">Tools</a>
-        <a href="#contact" class="hover:text-cyan-300 transition">Contact</a>
-      </div>
-
-      <a
-        href="Delantar, Carmel Joy - RESUME.pdf"
-        target="_blank"
-        class="hidden md:flex glow-btn bg-gradient-to-r from-blue-500 to-cyan-400 px-7 py-3 rounded-full font-semibold"
-      >
-        Resume
-      </a>
-
-      <button id="menu-btn" class="md:hidden text-white text-3xl">
-        ☰
-      </button>
-
-    </div>
-
-    <div id="mobile-menu" class="hidden md:hidden px-6 pb-6">
-
-      <div class="glass-card rounded-3xl p-6 flex flex-col gap-5 mt-4">
-
-        <a href="#home" class="mobile-link hover:text-cyan-300 transition">Home</a>
-        <a href="#services" class="mobile-link hover:text-cyan-300 transition">Services</a>
-        <a href="#experience" class="mobile-link hover:text-cyan-300 transition">Experience</a>
-        <a href="#tools" class="mobile-link hover:text-cyan-300 transition">Tools</a>
-        <a href="#contact" class="mobile-link hover:text-cyan-300 transition">Contact</a>
-
-      </div>
-
-    </div>
-
-  </nav>
-
-  <section id="home" class="min-h-screen flex items-center relative overflow-hidden px-6 pt-32">
-
-    <div class="hero-bg bg-one"></div>
-    <div class="hero-bg bg-two"></div>
-
-    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center relative z-10">
-
-      <div data-aos="fade-right">
-
-        <p class="text-cyan-300 font-semibold mb-6 tracking-widest">
-          AVAILABLE FOR REMOTE OPPORTUNITIES
-        </p>
-
-        <h1 class="text-6xl md:text-7xl font-black mb-6">
-          Carmel Joy
-        </h1>
-
-        <h2 class="text-3xl md:text-4xl font-bold gradient-text mb-8">
-          Operations Specialist & Customer Support
-        </h2>
-
-        <p class="text-slate-300 text-lg leading-relaxed max-w-xl mb-10">
-          Helping businesses stay organized, responsive, and efficient through exceptional customer support and streamlined operations management.
-        </p>
-
-        <div class="typing text-cyan-300 font-semibold text-lg mb-10">
-          Customer Support • Operations • Dispatch • Mortgage Support
-        </div>
-
-      </div>
-
-      <div class="flex justify-center" data-aos="fade-left">
-
-        <div class="relative floating">
-
-          <div class="absolute inset-0 bg-blue-500/20 blur-3xl rounded-full"></div>
-
-          <img
-            src="https://i.imgur.com/IewGC83.png"
-            alt="Carmel Joy"
-            class="relative w-[380px] md:w-[470px] rounded-[40px] border border-white/20 shadow-[0_25px_80px_rgba(59,130,246,0.35)]"
-          />
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <section id="services" class="py-40 px-6 relative z-10">
-
-    <div class="max-w-7xl mx-auto">
-
-      <div class="text-center mb-20" data-aos="fade-up">
-
-        <h2 class="text-6xl font-black gradient-text mb-6">
-          How I Can Help
-        </h2>
-
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-10">
-
-        <div class="premium-card glass-card rounded-[36px] p-10">
-          <div class="relative z-10">
-            <div class="w-16 h-16 rounded-3xl bg-blue-500/20 flex items-center justify-center mb-8 text-3xl">💬</div>
-            <h3 class="text-3xl font-bold mb-5">Customer Support</h3>
-            <p class="text-slate-300 leading-relaxed text-lg">Professional customer communication and client-focused support.</p>
-          </div>
-        </div>
-
-        <div class="premium-card glass-card rounded-[36px] p-10">
-          <div class="relative z-10">
-            <div class="w-16 h-16 rounded-3xl bg-blue-500/20 flex items-center justify-center mb-8 text-3xl">⚙️</div>
-            <h3 class="text-3xl font-bold mb-5">Operations Support</h3>
-            <p class="text-slate-300 leading-relaxed text-lg">Workflow coordination and operational task management.</p>
-          </div>
-        </div>
-
-        <div class="premium-card glass-card rounded-[36px] p-10">
-          <div class="relative z-10">
-            <div class="w-16 h-16 rounded-3xl bg-blue-500/20 flex items-center justify-center mb-8 text-3xl">📊</div>
-            <h3 class="text-3xl font-bold mb-5">CRM & Workflow Coordination</h3>
-            <p class="text-slate-300 leading-relaxed text-lg">Managing systems, customer records, and workflow organization.</p>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <section id="contact" class="py-40 px-6 relative overflow-hidden">
-
-    <div class="hero-bg bg-one"></div>
-
-    <div class="max-w-4xl mx-auto relative z-10">
-
-      <div class="glass-card rounded-[40px] p-14 border border-white/10 shadow-2xl text-center">
-
-        <h2 class="text-6xl font-black gradient-text mb-8">
-          Let’s Work Together
-        </h2>
-
-        <p class="text-slate-300 text-xl leading-relaxed mb-12">
-          Helping businesses stay organized, responsive, and efficient.
-        </p>
-
-        <div class="flex flex-wrap justify-center gap-6">
-
-          <a
-            href="mailto:carmeljoy.supportpro@gmail.com"
-            class="glow-btn bg-gradient-to-r from-blue-500 to-cyan-400 px-10 py-5 rounded-full font-semibold"
-          >
-            Email Me
-          </a>
-
-          <a
-            href="https://wa.me/639954755949"
-            target="_blank"
-            class="border border-white/10 px-10 py-5 rounded-full font-semibold hover:bg-white/10 transition"
-          >
-            WhatsApp
-          </a>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <footer class="py-10 text-center border-t border-white/5 relative z-10">
-
-    <div class="flex items-center justify-center gap-4 mb-4">
-
-      <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center font-bold">
+      <div class="w-12 h-12 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center font-bold shadow-xl">
         CJ
       </div>
 
-      <h3 class="font-semibold text-lg">
-        Carmel Joy
-      </h3>
+      <div>
+
+        <h1 class="font-bold text-xl">
+          Carmel Joy
+        </h1>
+
+        <p class="text-sm text-slate-300">
+          Operations Specialist
+        </p>
+
+      </div>
 
     </div>
 
-    <p class="text-slate-400">
-      Operations Specialist & Customer Support
-    </p>
+    <!-- DESKTOP MENU -->
+    <div class="hidden md:flex items-center gap-10 text-sm font-medium">
 
-  </footer>
+      <a href="#home" class="hover:text-cyan-300 transition">
+        Home
+      </a>
 
-  <script>
+      <a href="#services" class="hover:text-cyan-300 transition">
+        Services
+      </a>
 
-    AOS.init({
-      duration:1200,
-      once:true,
-      offset:80,
-      easing:"ease-out-cubic"
-    });
+      <a href="#experience" class="hover:text-cyan-300 transition">
+        Experience
+      </a>
 
-    const menuBtn = document.getElementById("menu-btn");
-    const mobileMenu = document.getElementById("mobile-menu");
+      <a href="#tools" class="hover:text-cyan-300 transition">
+        Tools
+      </a>
 
-    menuBtn.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-    });
+      <a href="#contact" class="hover:text-cyan-300 transition">
+        Contact
+      </a>
 
-    document.querySelectorAll(".mobile-link").forEach(link => {
-      link.addEventListener("click", () => {
-        mobileMenu.classList.add("hidden");
-      });
-    });
+    </div>
 
-    const nav = document.querySelector("nav");
+    <!-- DESKTOP BUTTON -->
+    <a
+      href="Delantar, Carmel Joy - RESUME.pdf"
+      target="_blank"
+      class="hidden md:flex glow-btn bg-gradient-to-r from-blue-500 to-cyan-400 px-7 py-3 rounded-full font-semibold"
+    >
+      Resume
+    </a>
 
-    window.addEventListener("scroll", () => {
+    <!-- MOBILE BUTTON -->
+    <button
+      id="menu-btn"
+      class="md:hidden text-white text-3xl"
+    >
+      ☰
+    </button>
 
-      if(window.scrollY > 50){
-        nav.style.background = "rgba(7,17,32,.88)";
-        nav.style.boxShadow = "0 10px 40px rgba(0,0,0,.35)";
-      }else{
-        nav.style.background = "rgba(7,17,32,.55)";
-        nav.style.boxShadow = "none";
-      }
+  </div>
 
-    });
+  <!-- MOBILE MENU -->
+  <div
+    id="mobile-menu"
+    class="hidden md:hidden px-6 pb-6"
+  >
 
-    const cards = document.querySelectorAll(".premium-card");
+    <div class="glass-card rounded-3xl p-6 flex flex-col gap-5 mt-4">
 
-    cards.forEach(card => {
+      <a href="#home" class="mobile-link hover:text-cyan-300 transition">
+        Home
+      </a>
 
-      card.addEventListener("mousemove", e => {
+      <a href="#services" class="mobile-link hover:text-cyan-300 transition">
+        Services
+      </a>
 
-        const rect = card.getBoundingClientRect();
+      <a href="#experience" class="mobile-link hover:text-cyan-300 transition">
+        Experience
+      </a>
 
-        card.style.setProperty(
-          "--x",
-          `${e.clientX - rect.left}px`
-        );
+      <a href="#tools" class="mobile-link hover:text-cyan-300 transition">
+        Tools
+      </a>
 
-        card.style.setProperty(
-          "--y",
-          `${e.clientY - rect.top}px`
-        );
+      <a href="#contact" class="mobile-link hover:text-cyan-300 transition">
+        Contact
+      </a>
 
-      });
+    </div>
 
-    });
+  </div>
 
-  </script>
+</nav>
+
+<!-- HERO -->
+<section
+  id="home"
+  class="min-h-screen flex items-center relative overflow-hidden px-6 pt-32"
+>
+
+  <div class="hero-bg bg-one"></div>
+  <div class="hero-bg bg-two"></div>
+
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center relative z-10">
+
+    <!-- LEFT -->
+    <div data-aos="fade-right">
+
+      <p class="text-cyan-300 font-semibold mb-6 tracking-widest">
+        AVAILABLE FOR REMOTE OPPORTUNITIES
+      </p>
+
+      <h1 class="text-6xl md:text-7xl font-black mb-6">
+        Carmel Joy
+      </h1>
+
+      <h2 class="text-3xl md:text-4xl font-bold gradient-text mb-8">
+        Operations Specialist & Customer Support
+      </h2>
+
+      <p class="text-slate-300 text-lg leading-relaxed max-w-xl mb-10">
+        Helping businesses stay organized, responsive, and efficient through exceptional customer support and streamlined operations management.
+      </p>
+
+      <div class="typing text-cyan-300 font-semibold text-lg mb-10">
+        Customer Support • Operations • Dispatch • Mortgage Support
+      </div>
+
+      <!-- HERO BUTTONS -->
+      <div class="flex flex-wrap gap-5 mb-14">
+
+        <a
+          href="Delantar, Carmel Joy - RESUME.pdf"
+          target="_blank"
+          class="glow-btn bg-gradient-to-r from-blue-500 to-cyan-400 px-8 py-4 rounded-full font-semibold"
+        >
+          Download Resume
+        </a>
+
+        <a
+          href="#contact"
+          class="border border-white/10 px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition"
+        >
+          Contact Me
+        </a>
+
+      </div>
+
+      <!-- STATS -->
+      <div class="flex flex-wrap gap-5">
+
+        <div class="glass-card rounded-3xl px-7 py-5">
+          <h3 class="text-3xl font-black">4+</h3>
+          <p class="text-slate-300 text-sm">Years Experience</p>
+        </div>
+
+        <div class="glass-card rounded-3xl px-7 py-5">
+          <h3 class="text-3xl font-black">U.S.</h3>
+          <p class="text-slate-300 text-sm">Client Support</p>
+        </div>
+
+        <div class="glass-card rounded-3xl px-7 py-5">
+          <h3 class="text-3xl font-black">Remote</h3>
+          <p class="text-slate-300 text-sm">Operations Specialist</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="flex justify-center" data-aos="fade-left">
+
+      <div class="relative floating">
+
+        <div class="absolute inset-0 bg-blue-500/20 blur-3xl rounded-full"></div>
+
+        <img
+          src="https://i.imgur.com/IewGC83.png"
+          alt="Carmel Joy"
+          class="relative w-[380px] md:w-[470px]
+          rounded-[40px]
+          border border-white/20
+          shadow-[0_25px_80px_rgba(59,130,246,0.35)]"
+        />
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-40 px-6 relative z-10">
+
+  <div class="max-w-7xl mx-auto">
+
+    <div class="text-center mb-20">
+
+      <h2 class="text-6xl font-black gradient-text mb-6">
+        How I Can Help
+      </h2>
+
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <!-- CARD -->
+      <div class="premium-card glass-card rounded-[36px] p-10">
+
+        <div class="relative z-10">
+
+          <div class="w-16 h-16 rounded-3xl bg-blue-500/20 flex items-center justify-center mb-8 text-3xl">
+            💬
+          </div>
+
+          <h3 class="text-3xl font-bold mb-5">
+            Customer Support
+          </h3>
+
+          <p class="text-slate-300 leading-relaxed text-lg">
+            Professional customer communication and client-focused support.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="premium-card glass-card rounded-[36px] p-10">
+
+        <div class="relative z-10">
+
+          <div class="w-16 h-16 rounded-3xl bg-blue-500/20 flex items-center justify-center mb-8 text-3xl">
+            ⚙️
+          </div>
+
+          <h3 class="text-3xl font-bold mb-5">
+            Operations Support
+          </h3>
+
+          <p class="text-slate-300 leading-relaxed text-lg">
+            Workflow coordination and operational task management.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="premium-card glass-card rounded-[36px] p-10">
+
+        <div class="relative z-10">
+
+          <div class="w-16 h-16 rounded-3xl bg-blue-500/20 flex items-center justify-center mb-8 text-3xl">
+            📊
+          </div>
+
+          <h3 class="text-3xl font-bold mb-5">
+            CRM & Workflow Coordination
+          </h3>
+
+          <p class="text-slate-300 leading-relaxed text-lg">
+            Managing systems, customer records, and workflow organization.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="py-40 px-6 relative z-10">
+
+  <div class="max-w-5xl mx-auto">
+
+    <div class="text-center mb-20">
+
+      <h2 class="text-6xl font-black gradient-text mb-6">
+        Professional Experience
+      </h2>
+
+    </div>
+
+    <div class="space-y-10">
+
+      <div class="premium-card glass-card rounded-[36px] p-10">
+
+        <div class="relative z-10">
+
+          <h3 class="text-3xl font-bold mb-3">
+            Home Lending Customer Support
+          </h3>
+
+          <p class="text-cyan-300 font-semibold mb-6 text-lg">
+            JPMorgan Chase & Co.
+          </p>
+
+          <p class="text-slate-300 leading-relaxed text-lg">
+            Supported U.S.-based mortgage and lending operations by assisting customers and coordinating processes.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="premium-card glass-card rounded-[36px] p-10">
+
+        <div class="relative z-10">
+
+          <h3 class="text-3xl font-bold mb-3">
+            Operations Management & Dispatch Coordination
+          </h3>
+
+          <p class="text-cyan-300 font-semibold mb-6 text-lg">
+            Clean Up Cali
+          </p>
+
+          <p class="text-slate-300 leading-relaxed text-lg">
+            Managed scheduling, dispatch support, agreements, invoicing, and workflow organization.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- TOOLS -->
+<section id="tools" class="py-40 px-6 relative z-10">
+
+  <div class="max-w-7xl mx-auto">
+
+    <div class="text-center mb-20">
+
+      <h2 class="text-6xl font-black gradient-text mb-6">
+        Tools I Work With
+      </h2>
+
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+
+      <div class="premium-card glass-card p-10 rounded-[32px] text-center text-lg font-semibold">
+        Google Workspace
+      </div>
+
+      <div class="premium-card glass-card p-10 rounded-[32px] text-center text-lg font-semibold">
+        Slack
+      </div>
+
+      <div class="premium-card glass-card p-10 rounded-[32px] text-center text-lg font-semibold">
+        Dialpad
+      </div>
+
+      <div class="premium-card glass-card p-10 rounded-[32px] text-center text-lg font-semibold">
+        QuickBooks
+      </div>
+
+      <div class="premium-card glass-card p-10 rounded-[32px] text-center text-lg font-semibold">
+        Microsoft 365
+      </div>
+
+      <div class="premium-card glass-card p-10 rounded-[32px] text-center text-lg font-semibold">
+        Canva
+      </div>
+
+      <div class="premium-card glass-card p-10 rounded-[32px] text-center text-lg font-semibold">
+        Google Calendar
+      </div>
+
+      <div class="premium-card glass-card p-10 rounded-[32px] text-center text-lg font-semibold">
+        AppFolio
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section
+  id="contact"
+  class="py-40 px-6 relative overflow-hidden"
+>
+
+  <div class="hero-bg bg-one"></div>
+
+  <div class="max-w-4xl mx-auto relative z-10">
+
+    <div
+      class="glass-card rounded-[40px] p-14 border border-white/10 shadow-2xl text-center"
+    >
+
+      <h2 class="text-6xl font-black gradient-text mb-8">
+        Let’s Work Together
+      </h2>
+
+      <p class="text-slate-300 text-xl leading-relaxed mb-12">
+        Helping businesses stay organized, responsive, and efficient.
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-6">
+
+        <a
+          href="mailto:carmeljoy.supportpro@gmail.com"
+          class="glow-btn bg-gradient-to-r from-blue-500 to-cyan-400 px-10 py-5 rounded-full font-semibold"
+        >
+          Email Me
+        </a>
+
+        <a
+          href="https://wa.me/639954755949"
+          target="_blank"
+          class="border border-white/10 px-10 py-5 rounded-full font-semibold hover:bg-white/10 transition"
+        >
+          WhatsApp
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="py-10 text-center border-t border-white/5 relative z-10">
+
+  <div class="flex items-center justify-center gap-4 mb-4">
+
+    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center font-bold">
+      CJ
+    </div>
+
+    <h3 class="font-semibold text-lg">
+      Carmel Joy
+    </h3>
+
+  </div>
+
+  <p class="text-slate-400">
+    Operations Specialist & Customer Support
+  </p>
+
+</footer>
+
+<!-- SCRIPTS -->
+<script>
+
+AOS.init({
+  duration:1200,
+  once:true,
+  offset:80,
+  easing:"ease-out-cubic"
+});
+
+/* MOBILE MENU */
+
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+
+menuBtn.addEventListener("click", () => {
+
+  mobileMenu.classList.toggle("hidden");
+
+});
+
+document.querySelectorAll(".mobile-link").forEach(link => {
+
+  link.addEventListener("click", () => {
+
+    mobileMenu.classList.add("hidden");
+
+  });
+
+});
+
+/* NAVBAR SCROLL */
+
+const nav = document.querySelector("nav");
+
+window.addEventListener("scroll", () => {
+
+  if(window.scrollY > 50){
+
+    nav.style.background = "rgba(7,17,32,.88)";
+    nav.style.boxShadow = "0 10px 40px rgba(0,0,0,.35)";
+
+  }else{
+
+    nav.style.background = "rgba(7,17,32,.55)";
+    nav.style.boxShadow = "none";
+
+  }
+
+});
+
+/* CARD GLOW EFFECT */
+
+const cards = document.querySelectorAll(".premium-card");
+
+cards.forEach(card => {
+
+  card.addEventListener("mousemove", e => {
+
+    const rect = card.getBoundingClientRect();
+
+    card.style.setProperty(
+      "--x",
+      `${e.clientX - rect.left}px`
+    );
+
+    card.style.setProperty(
+      "--y",
+      `${e.clientY - rect.top}px`
+    );
+
+  });
+
+});
+
+</script>
 
 </body>
 </html>
-```
